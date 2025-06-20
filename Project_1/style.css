@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Regular.ttf) format(truetype);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(196, 196, 196);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 50% 25%;
+}
+
+.square{
+    rotate: 45deg;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+}
+#left-top-left{
+    /* background-color: darkgray; */
+    grid-column: 1/2;
+    grid-row: 1;
+    display: flex;
+}
+#logo{
+    /* background-color: red; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+#menu{
+    margin-top: 10px;
+    /* background-color: darkblue; */
+    height: 100%;
+    width: 50%;
+}
+#left-top-left h5{
+    padding: 2px 20px;
+    /* background-color: aqua; */
+    justify-self: end;
+}
+#bottom{
+    background-color: darkolivegreen;
+}
+#bottom  h1{
+    padding: 0 30px;
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 0.9;
+}
+#bottom  h1:nth-child(2n){
+    /* background-color: red; */
+    text-align: center;
+}
+#left-bottom{
+    padding: 70px 40px;
+    /* background-color: darkorchid; */
+}
+#left-bottom h3{
+    font-weight: 500;
+}
+
+#right{
+    background-color: darkgreen;
+    grid-column: 2;
+    grid-row: 1/5;
+}
+
