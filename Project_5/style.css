@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Regular.ttf) format(truetype);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(216, 198, 164);
+}
+nav{
+    padding-right: 2rem;
+    height: 2rem;
+    width: 100%;
+    /* background-color: rgb(127, 127, 185); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    position: fixed;
+}
+nav h5{
+    border: 1px solid black;
+    padding: 0.1rem 0.7rem;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    font-weight: 100;
+}
+#top-text{
+    height: 17%;
+    width: 100%;
+    /* background-color: brown; */
+}
+#top-text h1{
+    padding-left: 2rem;
+    /* background-color: aquamarine; */
+    font-size: 5rem;
+    font-family: 800;
+    line-height: 5rem;
+}
+#top-bottom{
+    margin-top: 2rem;
+    padding: 0px 2rem;
+    height: 5%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#text-left{
+    /* background-color: blanchedalmond; */
+    width: fit-content;
+}
+#text-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    /* background-color: aqua; */
+    gap: 1rem;
+}
