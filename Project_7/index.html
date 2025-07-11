@@ -6,6 +6,10 @@
     <title>Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
+      @font-face {
+        font-family: "Gilroy";
+        src: url("../fonts/Gilroy-Regular.ttf") format(truetype);
+      }
       * {
         box-sizing: border-box;
       }
@@ -17,14 +21,20 @@
     </style>
   </head>
   <body>
-    <main class="w-full px-[10rem] py-8 font-[]">
+    <main class="w-full px-[10rem] py-8">
       <nav class="flex justify-between items-center">
         <h1 class="text-2xl font-medium">Portfolio</h1>
         <div class="links flex gap-4">
           <a href="" class="font-medium text-xl tracking-tighter">Home</a>
-          <a href="" class="font-medium text-xl opacity-50 tracking-tighter">About</a>
-          <a href="" class="font-medium text-xl opacity-50 tracking-tighter">Contact</a>
-          <a href="" class="font-medium text-xl opacity-50 tracking-tighter">Work Together</a>
+          <a href="" class="font-medium text-xl opacity-50 tracking-tighter"
+            >About</a
+          >
+          <a href="" class="font-medium text-xl opacity-50 tracking-tighter"
+            >Contact</a
+          >
+          <a href="" class="font-medium text-xl opacity-50 tracking-tighter"
+            >Work Together</a
+          >
         </div>
       </nav>
       <section class="w-full mt-15 flex justify-between items-end">
@@ -32,14 +42,46 @@
           <h6 class="text-2xl tracking-tighter">Hello I am,</h6>
           <h1 class="text-9xl -ml-2 tracking-tighter">Harsh</h1>
         </div>
-        <div class="righthead flex gap-4 items-center ">
-            <h4 class="tracking-tighter font-medium text-xl">[06.11 PM]</h4>
-            <div class="w-32 h-[1px] bg-black"></div>
-            <h3 class="tracking-tight font-medium text-xl">Creative Frontend Development</h3>
+        <div class="righthead flex gap-4 items-center">
+          <h4 class="tracking-tighter font-medium text-xl">[06.11 PM]</h4>
+          <div class="w-32 h-[1px] bg-black"></div>
+          <h3 class="tracking-tight font-medium text-xl">
+            Creative Frontend Development
+          </h3>
         </div>
       </section>
       <section class="picture w-full h-[30rem] mt-15 bg-red-400">
-        <img class="w-full h-full object-cover object-[20%_20%]" src="https://images.unsplash.com/photo-1675714176794-d36f20984c31?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img
+          class="w-full h-full object-cover object-[20%_20%]"
+          src="https://images.unsplash.com/photo-1694643823220-4d17d20e1ddb?q=80&w=1129&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </section>
+      <section
+        class="about w-full px-10 py-20 mt-30 flex justify-center items-center"
+      >
+        <div class="text relative text-center w-3/3">
+          <img class="absolute -top-20" src="../images/image 222.png" alt="">
+          <img class="absolute right-0 -top-30" src="../images/image 223.png" alt="">
+          <img class="absolute -bottom-30 left-50" src="../images/image 224.png" alt="">
+          <img class="absolute right-50 -bottom-20" src="../images/image 225.png" alt="">
+          <h1 class="text-4xl font-bold mb-5">
+            [I design & build experiences]
+          </h1>
+          <p class="text-xl font-medium tracking-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nisi
+            sint tempora eaque quidem accusamus fuga explicabo eius? Dicta
+            dolore aut facere. Error neque laudantium cumque. Accusamus possimus
+            nobis dolore omnis ipsa!
+          </p>
+        </div>
+      </section>
+      <section class="w-full px-10 py-20  mt-60 realtive">
+        <div class="w-full px-10 py-8 gap-10 flex items-center sticky top-0">
+          <h1 class="text-6xl font-medium">2017</h1>
+          <div class="w-50 h-1 bg-black"></div>
+          <h1 class="text-6xl tracking-tighter font-medium">The beginning</h1>
+        </div>
       </section>
     </main>
   </body>
