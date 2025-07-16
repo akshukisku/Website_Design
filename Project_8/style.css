@@ -15,7 +15,7 @@ html {
 
 main {
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid black;
 }
 
@@ -47,6 +47,74 @@ body {
   border-radius: 1rem;
 }
 
+.view2 {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view2 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view2 .top p {
+  font-weight: 200;
+  opacity: 0.7;
+}
+.view2 .top h1 {
+  line-height: 3.2rem;
+  width: 90%;
+  font-weight: 500;
+  font-size: 3rem;
+}
+.view2 .top button {
+  padding: 0.7rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: black;
+  border-radius: 0.5rem;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+.view2 .line {
+  background-color: black;
+  height: 1px;
+}
+.view2 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view2 .elem1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.view2 .elem1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view2 .elem2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.view2 .elem2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view2 .elem3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.view2 .elem3 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (min-width: 1020px) {
   main {
     padding: 2rem;
@@ -58,5 +126,21 @@ body {
   }
   .view1 img {
     margin-top: 2rem;
+  }
+  .view2 {
+    flex-direction: row;
+  }
+  .view2 .top {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .view2 .line {
+    height: initial;
+    width: 1px;
+  }
+  .view2 .bottom .line {
+    height: 1px;
+    width: 100%;
+    align-self: stretch;
   }
 }/*# sourceMappingURL=style.css.map */
